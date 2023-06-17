@@ -1,9 +1,12 @@
 import React from 'react'
+import HomePage from './page/home';
 
 const App = () => {
   return (
-    <div>This is Zomoto</div>
+    <div>
+      <HomePage/>
+    </div>
   )
 }
 
-export default App
+export default App;
