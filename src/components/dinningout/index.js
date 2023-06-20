@@ -3,7 +3,9 @@ import "./dinningout.css";
 
 const DiningOut = () => {
   return (
-    <div>Dining Out</div>
+    <div>
+      Dining Out
+    </div>
   )
 }
 

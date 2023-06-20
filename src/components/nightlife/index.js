@@ -3,7 +3,9 @@ import "./nightout.css";
 
 const NightLife = () => {
   return (
-    <div>NightLife</div>
+    <div>
+      NightLife
+    </div>
   )
 }
 
