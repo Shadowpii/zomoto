@@ -4,7 +4,7 @@ import TabOptions from '../../components/common/tabOptions';
 import Footer from '../../components/common/footer';
 import Delivery from '../../components/delivery';
 import NightLife from '../../components/nightlife';
-import DiningOut from '../../components/dinningout';
+import DiningOut from '../../components/diningout';
 
 const HomePage = () => {
 
@@ -29,7 +29,7 @@ const getCorrectScreen=(tab)=>{
         case "NightLife":
             return <NightLife/>
         default:
-            return <Delivery/>
+            return <DiningOut/>
     }
 }
 

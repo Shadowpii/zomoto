@@ -1,42 +1,9 @@
 import React from 'react';
-import "./nightout.css";
-import Filters from '../common/filters';
-import { nightLife } from '../../data/nightLife';
+import "./diningout.css";
 import Collection from '../common/collection';
+import Filters from '../common/filters';
+import { diningOut } from '../../data/diningOut';
 import ExploreSection from '../common/exploreSection';
-
-const nightFilters=[
-  {
-    id:1,
-    icon: <span class="material-symbols-outlined">
-          filter_list
-          </span>,
-    title: 'Filters',
-  },
-  {
-    id:2,
-    title: 'Rating: 4.0+',
-  },
-  {
-    id:3,
-    title: 'Safe and Hygenic',
-  },
-  {
-    id:4,
-    title: 'Pure Veg',
-  },
-  {
-    id:5,
-    icon: <span class="material-symbols-outlined">
-            swap_vert
-          </span>,
-    title: 'Delivery Time',
-  },
-  {
-    id:6,
-    title: 'Great Offers',
-  },
-];
 
 const collectionList=[
   {
@@ -77,18 +44,51 @@ const collectionList=[
   },
 ]
 
-const NightList = nightLife;
+const diningFilters=[
+  {
+    id:1,
+    icon: <span class="material-symbols-outlined">
+          filter_list
+          </span>,
+    title: 'Filters',
+  },
+  {
+    id:2,
+    title: 'Rating: 4.0+',
+  },
+  {
+    id:3,
+    title: 'Safe and Hygenic',
+  },
+  {
+    id:4,
+    title: 'Pure Veg',
+  },
+  {
+    id:5,
+    icon: <span class="material-symbols-outlined">
+            swap_vert
+          </span>,
+    title: 'Delivery Time',
+  },
+  {
+    id:6,
+    title: 'Great Offers',
+  },
+];
 
-const NightLife = () => {
+const diningList = diningOut;
+
+const DiningOut = () => {
   return (
     <div>
       <Collection list={collectionList}/>
       <div className='max-width'>
-      <Filters filterList={nightFilters}/>
+      <Filters filterList={diningFilters}/>
       </div>
-      <ExploreSection list={NightList} collectionName="NightLife Restraunts in Bengaluru"/>
+      <ExploreSection list={diningList} collectionName="Dine-Out Restaurants in Bengaluru"/>
     </div>
   )
 }
 
-export default NightLife;
+export default DiningOut;
